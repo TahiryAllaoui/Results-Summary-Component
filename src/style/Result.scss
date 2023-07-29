@@ -1,0 +1,34 @@
+.result-container {
+    background-color: hsl(252, 100%, 67%);
+    color: hsla(241, 100%, 89%, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .note-circle {
+        color: hsl(241, 81%, 54%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            color: hsl(224, 30%, 27%);
+        }
+
+        .note {
+            font-size: larger;
+            color: hsl(221, 100%, 96%);
+        }
+
+
+    }
+
+    .great {
+        font-size: large;
+        color: hsl(221, 100%, 96%);
+    }
+
+    p {
+        color: hsla(241, 100%, 89%, 0.701);
+    }
+}

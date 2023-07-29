@@ -1,34 +1,60 @@
+@import "./color.scss";
+
+
 .result-container {
-    background-color: hsl(252, 100%, 67%);
-    color: hsla(241, 100%, 89%, 0.89);
+    background-color: rgb(92, 61, 250);
+    color: rgb(183, 172, 255);
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    width: 20%;
+    height: 65%;
 
     .note-circle {
-        color: hsl(241, 81%, 54%);
+        background: linear-gradient(to bottom, rgb(74, 35, 204), rgb(92, 61, 250));
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 100%;
+        width: 65%;
+        height: 40%;
 
         p {
-            color: hsl(224, 30%, 27%);
+            line-height: 2rem;
+            font-size: large;
+            color: rgb(126, 111, 255);
         }
 
         .note {
-            font-size: larger;
-            color: hsl(221, 100%, 96%);
+            font-weight: bold;
+            font-size: 5rem;
+            margin: 0;
+            color: $White;
         }
 
 
     }
 
     .great {
-        font-size: large;
-        color: hsl(221, 100%, 96%);
+        font-size: 2rem;
+        color: $White;
     }
 
     p {
-        color: hsla(241, 100%, 89%, 0.701);
+        text-align: center;
+        color: rgb(211, 214, 255);
+        width: 80%;
     }
+}
+
+.great-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
 }

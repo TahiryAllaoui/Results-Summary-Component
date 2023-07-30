@@ -23,8 +23,16 @@ body {
   background-color: white;
   width: 100vw;
   height: 100vh;
+  margin: 0;
 }
 
 * {
   font-family: 'Hanken';
+}
+
+@media (max-width: 416px) {
+  #root {
+    padding: 0px;
+    margin: 0;
+  }
 }

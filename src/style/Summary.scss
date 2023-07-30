@@ -69,3 +69,11 @@
 
     }
 }
+
+@media (max-width: 416px) {
+    .summary {
+        width: 90%;
+        align-items: flex-start;
+        margin-left: 5rem;
+    }
+}

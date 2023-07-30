@@ -33,6 +33,13 @@ body {
 @media (max-width: 416px) {
   #root {
     padding: 0px;
+    width: 100svw;
+    height: 100svh;
     margin: 0;
+  }
+
+  body {
+    width: 100svw;
+    height: 100svh;
   }
 }

@@ -74,7 +74,15 @@
     .summary {
         padding-top: 0.5rem;
         width: 90%;
-        align-items: flex-start;
-        margin-left: 4.5rem;
+        height: 100svh;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .summary {
+        width: 90%;
+        height: 100svh;
+        gap: 1rem;
     }
 }

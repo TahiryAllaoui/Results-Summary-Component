@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem;
 
     .summary-item {
         display: flex;
@@ -61,10 +61,11 @@
         border-radius: 2rem;
         color: white;
         font-size: 1rem;
-    }
+        transition: background-color 150ms;
 
-    button:hover {
-        background-color: rgb(92, 61, 250);
+        &:hover {
+            background-color: rgb(92, 61, 250);
+        }
 
     }
 }

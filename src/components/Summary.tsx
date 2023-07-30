@@ -1,10 +1,33 @@
 import '../style/Summary.scss'
 import data from '../data/data.json'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import reaction from "../assets/images/icon-reaction.svg";
+import memory from "../assets/images/icon-memory.svg";
+import verbal from "../assets/images/icon-verbal.svg";
+import visual from "../assets/images/icon-visual.svg";
+
+interface Data {
+    category: string;
+    score: number;
+    icon: string;
+    color: string;
+    bgColor: string;
+}
 
 const Summary = () => {
     //for Updating data in the future
-    const [datas, setDatas] = useState(data);
+    const [datas, setDatas] = useState<Data[]>([]);
+
+    const icons = [
+        reaction, memory, verbal, visual
+    ];
+
+    useEffect(() => {
+        for (let i = 0; i < data.length; i++) {
+            data[i].icon = icons[i];
+        }
+        setDatas(data);
+    }, []);
 
     return <div className='summary'>
         <h2>Summary</h2>

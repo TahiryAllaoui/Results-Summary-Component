@@ -21,7 +21,7 @@
         width: 80%;
 
         h2 {
-            color: #444;
+            color: rgba(54, 48, 72, 0.9);
         }
     }
 
@@ -50,5 +50,15 @@
                 color: rgb(162, 157, 164);
             }
         }
+    }
+
+    button {
+        background-color: rgba(54, 48, 72, 0.9);
+        outline: none;
+        border: none;
+        width: 70%;
+        height: 10%;
+        border-radius: 2rem;
+        color: white;
     }
 }

@@ -7,8 +7,8 @@ const Summary = () => {
     const [datas, setDatas] = useState(data);
 
     return <div className='summary'>
+        <h2>Summary</h2>
         <div className="summary-item">
-            <h2>Summary</h2>
             {datas.map((data) => {
                 return <div className="data-summary" key={data.category} style={{ backgroundColor: data.bgColor }} >
                     <div className='data-front'>
